@@ -2,17 +2,18 @@
   "name": "icons",
   "version": "0.0.0",
   "files": ["dist"],
-  "main": "./dist/main.umd.js",
-  "module": "./dist/main.es.js",
+  "main": "./dist/my-component-lib.umd.js",
+  "module": "./dist/my-component-lib.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/main.es.js",
-      "require": "./dist/main.umd.js"
+      "import": "./dist/my-component-lib.es.js",
+      "require": "./dist/my-component-lib.umd.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
