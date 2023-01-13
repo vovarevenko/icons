@@ -20,9 +20,9 @@ export default defineConfig({
   // },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/lib.ts'),
+      entry: resolve(__dirname, 'src/main.ts'),
       name: 'MyLib',
-      fileName: 'my-lib',
+      fileName: 'main',
     },
     rollupOptions: {
       external: ['vue'],

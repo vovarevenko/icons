@@ -2,12 +2,12 @@
   "name": "icons",
   "version": "0.0.0",
   "files": ["dist"],
-  "main": "./dist/my-lib.umd.js",
-  "module": "./dist/my-lib.es.js",
+  "main": "./dist/main.umd.js",
+  "module": "./dist/main.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js"
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.umd.js"
     }
   },
   "scripts": {
